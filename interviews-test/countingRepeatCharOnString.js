@@ -7,13 +7,11 @@ let count = 0;
 let bigQuantityFound = 0;
 
 let splitedString = string.split("");
-console.log(splitedString);
 
 for (let i = 0; i < splitedString.length; i++) {
   const currentChar = splitedString[i];
 
   if (currentChar && currentChar === charToCount) {
-    charToCount = charToCount;
     count += 1;
     if (count > bigQuantityFound) {
       bigQuantityFound = count;
